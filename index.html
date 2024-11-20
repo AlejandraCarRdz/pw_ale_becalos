@@ -37,53 +37,93 @@
              para prevenir riesgos, fomentar la seguridad y crear conciencia entre los ciudadanos 
         </h4>
         <hr>
+    <body>
+        <h2 style="text-align: center;">Qué está pasando en el mundo</h2>
+        <style>
+            
+            .video-container {
+                display: flex;                 /* Establece un layout en fila */
+                justify-content: center;       /* Centra los videos en la página */
+                gap: 20px;                     /* Espacio entre los videos */
+                flex-wrap: wrap;               /* Permite que los videos se ajusten si hay poco espacio */
+                margin-top: 30px;              /* Espacio superior 
+            }
+    
+            /* Ajustar los videos */
+            iframe {
+                width: 560px;                 /* Ancho fijo del video */
+                height: 315px;                /* Altura fija del video */
+                max-width: 100%;              /* Hace que el video sea responsive en pantallas pequeñas */
+            }
+    
+            /* Hacer los videos más grandes en pantallas grandes */
+            @media (min-width: 768px) {
+                iframe {
+                    width: 800px;             /* Ancho más grande para pantallas grandes */
+                    height: 450px;            /* Altura más grande para pantallas grandes */
+                }
+            }
+        </style>
+    </head>
 
-        <h1> Conoce la página</h1>
+    <body>
+    
+        <!-- Contenedor para los videos -->
+        <div class="video-container">
+            <!-- Primer video -->
+            <iframe src="https://www.youtube.com/embed/8UMdzQ2AE5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+            <!-- Segundo video -->
+            <iframe src="https://www.youtube.com/embed/kjMjwWbbTgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+
+        <h2> Conoce la página</h2>
 
     </section>
     <section id="Noticias">
-        <h2> Noticias</h2>
-        <h3>Aquí encontrarás las noticias de toda la semana</h3>
+        <h3> Noticias</h3>
+        <h4>Aquí encontrarás las noticias de toda la semana</h4>
 
         <hr>
 
         <section id="Seguridad">
-            <h2>Seguridad</h2>
-            <h3>Accede de forma rápida a los números de emergencia y conoce las novedades que te ayudarán a mantenerte seguro</h3>
+            <h3>Seguridad</h3>
+            <h4>Accede de forma rápida a los números de emergencia y conoce las novedades que te ayudarán a mantenerte seguro</h4>
             
            
             <hr>
 
         </section>
         <section id="Ciudad segura">
-            <h2>Ciudad segura</h2>
-            <h3>Conoce los tipos de crímenes más cotidianos en la Ciudad de México, sus colonias más inseguras y las recomendaciones para cuidar de ti
-            </h3>
+            <h3>Ciudad segura</h3>
+            <h4>Conoce los tipos de crímenes más cotidianos en la Ciudad de México, sus colonias más inseguras y las recomendaciones para cuidar de ti
+            </h4>
            
             <hr>
        
         </section>
         <section id="Violencia y prevención">
-            <h2>Violencia y prevención</h2>
-            <h3>¿Sabías que hay muchos tipos de violencia y algunos no los conocías?
+            <h3>Violencia y prevención</h3>
+            <h4>¿Sabías que hay muchos tipos de violencia y algunos no los conocías?
                 Manetbnte informado sobre la violencia física, mental y emocional, así cómo las formas de prevención que tenemos a la mano.
-            </h3>
+            </h4>
            
             <hr>
         </section>
 
         <section id="Salud">
-            <h2>Salud</h2>
-            <h3>La salud física es tan importante como la mental y la emocional, conoce las plataformas de acceso gratuito a las que puedes acudir para tu bienestar</h3>
+            <h3>Salud</h3>
+            <h4>La salud física es tan importante como la mental y la emocional, conoce las plataformas de acceso gratuito a las que puedes acudir para tu bienestar</h4>
           
             <hr>
         </section>
     
         <section id="Conoce la ley">
-            <h2>Conoce la ley</h2>
-            <h3>¿Conoces tus derechos y obligaciones?
+            <h3>Conoce la ley</h3>
+            <h4>¿Conoces tus derechos y obligaciones?
                 Mantente al tanto de lo que la ley dice sobre nuestros derechos y obligaciones.
-            </h3>
+            </h4>
            
             <hr>
         </section>
