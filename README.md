@@ -1,3 +1,3 @@
-# Borrador del proyecto para Bécalos Tech Challenge
+# Ciudad Segura
 
-El proyecto consta de una página web sencilla, la cual actualizaré poco a poco.
+El presente proyecto fue realizado con el objetivo de generar conciencia en la población de la Ciudad de México, así cómo fomentar la prevención, cooperación y cuidado entre las comunidades que la componen. 

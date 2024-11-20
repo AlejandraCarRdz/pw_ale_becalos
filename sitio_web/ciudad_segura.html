@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo - Colonias de CDMX</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        /* Estilos para el mapa */
+        #map {
+            height: 100vh; 
+            width: 100%;   
+        }
+    </style>
+</head>
+<body>
+    <h1>Colonias de la Ciudad de México</h1>
+    <div id="map"></div>
+
+    <script>
+        // Mapa de la CDMX
+        const map = L.map('map').setView([19.4326, -99.1332], 12);
+
+        // OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Lista de colonias 
+        const colonias = [
+            { name: "Centro Histórico", coords: [19.4263, -99.1266] },
+            { name: "Colonia Morelos", coords: [19.4416, -99.1237] },
+            { name: "Colonia San Rafael", coords: [19.4414, -99.1589] },
+            { name: "Colonia Tabacalera", coords: [19.4373, -99.1527] },
+            { name: "Colonia Del Parque", coords: [19.4700, -99.1400] },
+            { name: "Colonia Penitenciaría", coords: [19.4786, -99.1167] },
+            { name: "Candelaria de los Patos Fovissste", coords: [19.4206, -99.1223] }
+        ];
+
+        // Marcadores para cada colonia
+        colonias.forEach(colonia => {
+            L.marker(colonia.coords).addTo(map)
+                .bindPopup(`<b>${colonia.name}</b>`);
+        });
+    </script>
+</body>
+</html>
