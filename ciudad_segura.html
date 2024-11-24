@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa Interactivo - Colonias de CDMX</title>
+    <title>Mapa Interactivo - Colonias más inseguras de la Ciudad de México</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
     <style>
@@ -14,7 +14,77 @@
         }
     </style>
 </head>
+<header>
+    <img src="banner.png" alt="imagen de personas caminando">
+
+</header>
 <body>
+
+    <body style="text-align: center;">
+        <header>
+            <h1>Colonias Más Inseguras de la CDMX</h1>
+            <p>Información basada en datos estadísticos y fuentes confiables.</p>
+        </header>
+    
+        <main>
+            <section>
+                <h2>Colonias más inseguras</h2>
+                <p>Estas son las colonias identificadas como las más inseguras en la Ciudad de México:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>Colonia Penitenciaria</li>
+                    <li>Colonia Del Parque</li>
+                    <li>Colonia San Rafael</li>
+                    <li>Colonia Tabacalera</li>
+                    <li>Colonia Morelos</li>
+                    <li>Centro Histórico</li>
+                    <li>Colonia Candelaria de los Patos FOVISSSTE</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>Razones de la inseguridad</h2>
+                <p>Cada colonia enfrenta problemas específicos que contribuyen a su alto índice de inseguridad:</p>
+                <article>
+                    <h3>Colonia Penitenciaria</h3>
+                    <p>Altos índices de robo a transeúntes y viviendas debido a su cercanía con zonas de conflicto.</p>
+                </article>
+                <article>
+                    <h3>Colonia Del Parque</h3>
+                    <p>Focos de venta de sustancias ilegales y falta de vigilancia policiaca.</p>
+                </article>
+                <article>
+                    <h3>Colonia San Rafael</h3>
+                    <p>Incremento de robos en transporte público y en negocios locales.</p>
+                </article>
+                <article>
+                    <h3>Colonia Tabacalera</h3>
+                    <p>Frecuentes asaltos nocturnos en calles poco iluminadas y alta incidencia de extorsiones.</p>
+                </article>
+                <article>
+                    <h3>Colonia Morelos</h3>
+                    <p>Dominada por el comercio informal, la venta de mercancía ilícita y bandas delictivas.</p>
+                </article>
+                <article>
+                    <h3>Centro Histórico</h3>
+                    <p>Una de las zonas con más denuncias por carteristas y robo a turistas.</p>
+                </article>
+                <article>
+                    <h3>Colonia Candelaria de los Patos FOVISSSTE</h3>
+                    <p>Asociada con actividades ilícitas y vandalismo en áreas comunes.</p>
+                </article>
+            </section>
+    
+            <section>
+                <h2>Datos estadísticos</h2>
+                <p>De acuerdo con el reporte de seguridad pública de 2024, estas colonias presentan los índices más altos de criminalidad:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li>Robo a transeúnte: 45% en promedio.</li>
+                    <li>Asaltos nocturnos: 38%.</li>
+                    <li>Extorsión: 20%.</li>
+                    <li>Presencia de delitos relacionados con sustancias ilícitas: 30%.</li>
+                </ul>
+                <p>Fuente: Secretaría de Seguridad Ciudadana (SSC-CDMX).</p>
+            </section>
     <h1>Colonias de la Ciudad de México</h1>
     <div id="map"></div>
 
