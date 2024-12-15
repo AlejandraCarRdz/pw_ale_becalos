@@ -1,132 +1,82 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ciudad Segura - Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <nav>
-        <p style="text-align: center;">
-            <a href="noticias.html">Noticias</a> | 
-            <a href="seguridad.html">Seguridad</a> | 
-            <a href="ciudad_segura.html">Ciudad segura</a> | 
-            <a href="viole_preve.html">Violencias y prevención</a> |
-            <a href="salud.html">Salud</a> |
-            <a href="legal.html">Ayuda legal</a>
-            
-        </p>
-        <hr>
+        <ul class="navbar">
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="seguridad.html">Seguridad</a></li>
+            <li><a href="ciudad_segura.html">Ciudad Segura</a></li>
+            <li><a href="viole_preve.html">Violencias y Prevención</a></li>
+            <li><a href="salud.html">Salud</a></li>
+            <li><a href="legal.html">Ayuda Legal</a></li>
+        </ul>
     </nav>
-    <main>
-     
-        <p style="text-align: center;">
-        <img src="portada.png" alt="Portada de la página Ciudad segura"> 
+
+    <header class="hero">
+        <img src="portada.png" alt="Portada de la página Ciudad Segura">
+        <h1>Bienvenido a Ciudad Segura</h1>
+        <p>
+            La Ciudad de México enfrenta un alto índice de delitos que impactan la seguridad y el bienestar de sus habitantes.
+            Esta página tiene como propósito proporcionar información precisa y útil sobre los delitos más comunes, además de
+            ofrecer herramientas y recursos para prevenir riesgos y fomentar la seguridad.
         </p>
+    </header>
 
-     </body>   
-        <h4 style="text-align: center;">Te damos la bienvenida a Ciudad segura. La Ciudad de México enfrenta un alto índice de delitos que impactan la seguridad y el bienestar de sus habitantes.
-            Desde robos y asaltos en el transporte público, hasta extorsiones telefónicas, secuestros exprés, fraudes en línea y 
-            diversas formas de violencia, la incidencia delictiva se ha convertido en un desafío complejo.Esta página tiene como 
-            propósito proporcionar información precisa y útil sobre los delitos más comunes, además de ofrecer herramientas y recursos
-             para prevenir riesgos, fomentar la seguridad y crear conciencia entre los ciudadanos 
-        </h4>
-        <hr>
-    <body>
-        <h2 style="text-align: center;">Qué está pasando en el mundo</h2>
-        <style>
-            
-            .video-container {
-                display: flex;                 /* Establece un layout en fila */
-                justify-content: center;       /* Centra los videos en la página */
-                gap: 20px;                     /* Espacio entre los videos */
-                flex-wrap: wrap;               /* Permite que los videos se ajusten si hay poco espacio */
-                margin-top: 30px;              /* Espacio superior 
-            }
-    
-            /* Ajustar los videos */
-            iframe {
-                width: 560px;                 /* Ancho fijo del video */
-                height: 315px;                /* Altura fija del video */
-                max-width: 100%;              /* Hace que el video sea responsive en pantallas pequeñas */
-            }
-    
-            /* Hacer los videos más grandes en pantallas grandes */
-            @media (min-width: 768px) {
-                iframe {
-                    width: 800px;             /* Ancho más grande para pantallas grandes */
-                    height: 450px;            /* Altura más grande para pantallas grandes */
-                }
-            }
-        </style>
-    </head>
-
-    <body>
-    
-        <!-- Contenedor para los videos -->
-        <div class="video-container">
-            <!-- Primer video -->
-            <iframe src="https://www.youtube.com/embed/8UMdzQ2AE5A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-            <!-- Segundo video -->
-            <iframe src="https://www.youtube.com/embed/kjMjwWbbTgo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-
-        <h2> Conoce la página</h2>
-
-    </section>
-    <section id="Noticias">
-        <h3> Noticias</h3>
-        <h4>Aquí encontrarás las noticias más importantes de la Ciudad de México</h4>
-
-        <hr>
-
-        <section id="Seguridad">
-            <h3>Seguridad</h3>
-            <h4>Accede de forma rápida a los números de emergencia y conoce las novedades que te ayudarán a mantenerte seguro</h4>
-            
-           
-            <hr>
-
-        </section>
-        <section id="Ciudad segura">
-            <h3>Ciudad segura</h3>
-            <h4>Conoce los tipos de crímenes más cotidianos en la Ciudad de México, sus colonias más inseguras y las recomendaciones para cuidar de ti
-            </h4>
-           
-            <hr>
-       
-        </section>
-        <section id="Violencia y prevención">
-            <h3>Violencia y prevención</h3>
-            <h4>¿Sabías que hay muchos tipos de violencia y algunos no los conocías?
-                Manetbnte informado sobre la violencia física, mental y emocional, así cómo las formas de prevención que tenemos a la mano.
-            </h4>
-           
-            <hr>
+    <main>
+        <section class="videos">
+            <h2>Qué está pasando en el mundo</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/8UMdzQ2AE5A" frameborder="0" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/kjMjwWbbTgo" frameborder="0" allowfullscreen></iframe>
+            </div>
         </section>
 
-        <section id="Salud">
-            <h3>Salud</h3>
-            <h4>La salud física es tan importante como la mental y la emocional, conoce las plataformas de acceso gratuito a las que puedes acudir para tu bienestar</h4>
-          
-            <hr>
-        </section>
-    
-        <section id="Conoce la ley">
-            <h3>Conoce la ley</h3>
-            <h4>¿Conoces tus derechos y obligaciones?
-                Mantente al tanto de lo que la ley dice sobre nuestros derechos y obligaciones.
-            </h4>
-           
-            <hr>
+        <section class="info-sections">
+            <article id="noticias">
+                <h3>Noticias</h3>
+                <p>Aquí encontrarás las noticias más importantes de la Ciudad de México.</p>
+            </article>
+
+            <article id="seguridad">
+                <h3>Seguridad</h3>
+                <p>Accede de forma rápida a los números de emergencia y conoce las novedades que te ayudarán a mantenerte seguro.</p>
+            </article>
+
+            <article id="ciudad_segura">
+                <h3>Ciudad Segura</h3>
+                <p>Conoce los tipos de crímenes más cotidianos en la Ciudad de México, sus colonias más inseguras y las recomendaciones para cuidar de ti.</p>
+            </article>
+
+            <article id="violencia_prevencion">
+                <h3>Violencias y Prevención</h3>
+                <p>¿Sabías que hay muchos tipos de violencia y algunos no los conocías? Mantente informado sobre la violencia física, mental y emocional, 
+                   así como las formas de prevención disponibles.
+                </p>
+            </article>
+
+            <article id="salud">
+                <h3>Salud</h3>
+                <p>La salud física es tan importante como la mental y emocional. Conoce las plataformas de acceso gratuito para tu bienestar.</p>
+            </article>
+
+            <article id="legal">
+                <h3>Conoce la Ley</h3>
+                <p>¿Conoces tus derechos y obligaciones? Mantente al tanto de lo que la ley dice sobre nuestros derechos y obligaciones.</p>
+            </article>
         </section>
     </main>
-    <footer>
-        <p style="text-align: center;">&copy; 2024 Delitos en la CDMX. Información para tu seguridad.</p>
-    </footer>
-</body>
 
+    <footer>
+        <p>&copy; 2024 Ciudad Segura. Información para tu seguridad.</p>
+    </footer>
+
+</body>
 </html>
