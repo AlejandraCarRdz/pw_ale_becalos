@@ -1,0 +1,147 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fb; /* Fondo azul suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #1e3c72; /* Azul fuerte */
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    position: relative;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Main content */
+main {
+    padding: 40px 20px;
+}
+
+/* Section styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #1e3c72; /* Azul fuerte */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1rem;
+    text-align: justify;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Resource and article items */
+.resource-item {
+    margin-bottom: 25px;
+    background-color: #ffffff;
+    border-left: 5px solid #1e3c72; /* Azul fuerte */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.resource-item h3 {
+    font-size: 1.8rem;
+    color: #1e3c72;
+    margin-bottom: 10px;
+}
+
+.resource-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+a {
+    color: #1e3c72;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images section */
+.images-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #1e3c72; /* Azul fuerte */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .resource-item {
+        padding: 15px;
+    }
+
+    .resource-item h3 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}

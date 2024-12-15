@@ -1,0 +1,150 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fb; /* Fondo suave y claro */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    background-color: #003366; /* Azul oscuro */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-text p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+}
+
+/* Main Content */
+.main-content {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.inseguras, .razones, .estadisticas {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.list li {
+    margin-bottom: 10px;
+}
+
+/* Razones de Inseguridad */
+.reason-item {
+    margin-bottom: 20px;
+}
+
+.reason-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.stat-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.stat-list li {
+    margin-bottom: 10px;
+}
+
+/* Mapa */
+.mapa {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#map {
+    height: 500px; /* Aumentamos la altura para mejor visualización */
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .reason-item h3 {
+        font-size: 1.3rem;
+    }
+
+    #map {
+        height: 300px;
+    }
+}

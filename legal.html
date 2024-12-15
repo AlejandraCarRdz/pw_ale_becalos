@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Información Legal</title>
+    <link rel="stylesheet" href="legal.css">
+    <!-- Importando Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<header>
-    <img src="banner.png" alt="imagen de personas caminando">
-</header>
 <body>
-    <header style="text-align: center;">
-        <h1>Información Legal para Ciudadanos de la CDMX</h1>
-        <p>Conoce tus derechos y las instancias a las que puedes acudir en casos de violencia.</p>
+    <header>
+        <img src="banner.png" alt="Imagen de personas caminando" class="banner-img">
+        <div class="header-content">
+            <h1>Información Legal para los Ciudadanos de la CDMX</h1>
+            <p>Conoce tus derechos y las instancias a las que puedes acudir en casos de violencia.</p>
+        </div>
     </header>
 
     <main>
-        
-        <section style="text-align: center;">
+        <section class="section rights">
             <h2>Derechos Fundamentales como Ciudadano</h2>
             <p>De acuerdo con la Constitución Política de la Ciudad de México y la Constitución Mexicana, tienes derecho a:</p>
-            <ul style="list-style: none; padding: 0;">
+            <ul>
                 <li>Recibir un trato digno y respetuoso.</li>
                 <li>Acceso a servicios de salud y educación.</li>
                 <li>Libertad de expresión y manifestación.</li>
@@ -28,51 +30,53 @@
             </ul>
         </section>
 
-        
-        <section style="text-align: left; margin: 0 auto; max-width: 600px;">
+        <section class="section violence">
             <h2>¿A dónde acudir en caso de violencia?</h2>
             <p>Si enfrentas violencia, estas son las principales instancias y recursos disponibles en la CDMX:</p>
-            <article>
-                <h3>Fiscalía General de Justicia de la CDMX</h3>
-                <p><strong>Teléfono:</strong> 55 5345 5000</p>
-                <p><strong>Dirección:</strong> General Gabriel Hernández 56, Doctores, Cuauhtémoc, 06720 CDMX</p>
-                <p><strong>Sitio web:</strong> <a href="https://www.fgjcdmx.gob.mx" target="_blank">www.fgjcdmx.gob.mx</a></p>
-            </article>
-            <article>
-                <h3>Locatel</h3>
-                <p><strong>Teléfono:</strong> 55 5658 1111</p>
-                <p>Brinda orientación y canalización a servicios de apoyo en casos de violencia.</p>
-            </article>
-            <article>
-                <h3>Centro de Justicia para las Mujeres</h3>
-                <p><strong>Teléfono:</strong> 800 108 4053</p>
-                <p>Ofrecen atención integral a mujeres víctimas de violencia, incluyendo asesoría legal y psicológica.</p>
-            </article>
-            <article>
-                <h3>Línea de Apoyo a Víctimas</h3>
-                <p><strong>Teléfono:</strong> 800 911 2000</p>
-                <p>Atención inmediata en casos de violencia de género o intrafamiliar.</p>
-            </article>
+            <div class="article-container">
+                <article>
+                    <h3>Fiscalía General de Justicia de la CDMX</h3>
+                    <p><strong>Teléfono:</strong> 55 5345 5000</p>
+                    <p><strong>Dirección:</strong> General Gabriel Hernández 56, Doctores, Cuauhtémoc, 06720 CDMX</p>
+                    <p><strong>Sitio web:</strong> <a href="https://www.fgjcdmx.gob.mx" target="_blank">www.fgjcdmx.gob.mx</a></p>
+                </article>
+                <article>
+                    <h3>Locatel</h3>
+                    <p><strong>Teléfono:</strong> 55 5658 1111</p>
+                    <p>Brinda orientación y canalización a servicios de apoyo en casos de violencia.</p>
+                </article>
+                <article>
+                    <h3>Centro de Justicia para las Mujeres</h3>
+                    <p><strong>Teléfono:</strong> 800 108 4053</p>
+                    <p>Ofrecen atención integral a mujeres víctimas de violencia, incluyendo asesoría legal y psicológica.</p>
+                </article>
+                <article>
+                    <h3>Línea de Apoyo a Víctimas</h3>
+                    <p><strong>Teléfono:</strong> 800 911 2000</p>
+                    <p>Atención inmediata en casos de violencia de género o intrafamiliar.</p>
+                </article>
+            </div>
         </section>
 
-        
-        <section style="text-align: center;">
+        <section class="section sources">
             <h2>Datos y Fuentes Confiables</h2>
             <p>La información presentada en esta página ha sido recopilada de las siguientes fuentes oficiales:</p>
-            <ul style="list-style: none; padding: 0;">
+            <ul>
                 <li><a href="https://www.cdmx.gob.mx" target="_blank">Gobierno de la Ciudad de México</a></li>
                 <li><a href="https://www.fgjcdmx.gob.mx" target="_blank">Fiscalía General de Justicia de la CDMX</a></li>
                 <li><a href="https://www.gob.mx" target="_blank">Gobierno de México</a></li>
             </ul>
         </section>
-        <div style="display: flex; justify-content: center; align-items: center;">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/W6Tv9E1hm_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
 
-    
+        <section class="video">
+            <h2>Video Informativo</h2>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/W6Tv9E1hm_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
     </main>
 
-    <footer style="text-align: center;">
+    <footer>
         <p>© 2024 Información Legal CDMX. Derechos reservados.</p>
     </footer>
 </body>

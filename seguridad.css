@@ -1,0 +1,168 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f7fb; /* Fondo azul suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+.main-header {
+    background-color: #003366; /* Azul oscuro para dar contraste */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.header-img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.header-text {
+    text-align: center;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+.header-text h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.header-text p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: #e0e0e0;
+    margin-top: 10px;
+}
+
+/* Main content */
+.content {
+    padding: 50px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resource-section {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #003366; /* Azul oscuro para destacar */
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #003366;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.resource-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.resource-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.resource-list strong {
+    color: #003366;
+    font-weight: bold;
+}
+
+.resource-list li::before {
+    content: '•';
+    color: #003366;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/* Imagen */
+.image-section {
+    text-align: center;
+}
+
+.image-responsive {
+    width: 90%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.main-footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-text p {
+        font-size: 1.1rem;
+    }
+
+    .resource-section {
+        padding: 20px;
+    }
+
+    .resource-list {
+        font-size: 1rem;
+    }
+
+    .resource-list li {
+        margin-bottom: 10px;
+    }
+
+    .image-responsive {
+        width: 100%;
+    }
+}
